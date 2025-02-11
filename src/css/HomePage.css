@@ -1,0 +1,25 @@
+/* General fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Class to be added on load */
+.fade-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Specific animations for text and cards */
+.text-on-load {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.animate-on-load {
+  opacity: 0;
+}
